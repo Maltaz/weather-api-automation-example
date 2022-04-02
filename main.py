@@ -7,7 +7,7 @@ class FetchWeatherOpenweathermap:
 
         #CONSTANTS
         self.api_url: str = 'https://api.openweathermap.org/data/2.5/weather'
-        self.api_key: str = '1b09454cddeb98291a1b4a10f19d77d1' #DELETE THIS
+        self.api_key: str = 'your api key' 
 
         #GET
         self.city: str = ""
@@ -16,7 +16,7 @@ class FetchWeatherOpenweathermap:
         self.request_url: str = ""
 
     def main(self) ->bool:
-        """Docstring
+        """Get <city> weather data from Openweather map 
         """
         if not self.get_weather_info():
             print("Error ........")
